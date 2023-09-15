@@ -11,15 +11,16 @@ const NAV_LINK_BASE_CLASS = `
     border-2
     border-transparent
 `;
-
-const NAV_LINK_INACTIVE_CLASS = `
-    ${NAV_LINK_BASE_CLASS}
-    hover:border-white
-`;
-
 const NAV_LINK_ACTIVE_CLASS = `
     ${NAV_LINK_BASE_CLASS}
     border-b-white
+`;
+const NAV_LINK_INACTIVE_CLASS = `
+    ${NAV_LINK_BASE_CLASS}
+    rounded-md
+    hover:border-white
+    hover:bg-white
+    hover:text-dbjf-gray
 `;
 
 type NavItemListProps = {
@@ -35,14 +36,15 @@ export default function NavItemList({ navItems }: NavItemListProps) {
 
     return (
         <ul className="
+            hidden
             h-full
-            flex
+            md:flex
             items-center
         ">
             {Object.keys(navItems).map(linkName => {
                 const link = navItems[linkName];
                 return (
-                    <li key={linkName}>
+                    <li key={linkName + "-nav-list"}>
                         <Link href={link} className={isLinkActive(link) ? NAV_LINK_ACTIVE_CLASS : NAV_LINK_INACTIVE_CLASS}>
                             {linkName}
                         </Link>
