@@ -7,29 +7,8 @@ import NavItemList from "./NavItemList";
 import Hamburger from "./Hamburger";
 import HamburgerMenu from "./HamburgerMenu";
 
-const LOGO_SIZE_STUCK = 120;
-const LOGO_SIZE_UNSTUCK = 100;
-const NAV_BASE_CLASS = `
-    sticky
-    top-0
-    w-screen
-    bg-dbjf-gray
-    flex
-    justify-between
-    items-center
-    px-20
-    duration-standard
-    drop-shadow-lg
-    z-100
-`;
-const NAV_STUCK_CLASS = `
-    ${NAV_BASE_CLASS}
-    h-[120px]
-`;
-const NAV_UNSTUCK_CLASS = `
-    ${NAV_BASE_CLASS}
-    h-[100px]
-`;
+const MAX_WINDOW_WIDTH_FOR_MENU = 768;
+const LOGO_SIZE = 80;
 const NAV_ITEMS = {
     "Home": "/",
     "About Us": "/about",
@@ -37,39 +16,43 @@ const NAV_ITEMS = {
 };
 
 export default function Nav() {
-    const [navClass, setNavClass] = useState(NAV_STUCK_CLASS);
-    const [logoSize, setLogoSize] = useState(LOGO_SIZE_STUCK);
     const [hamburgerMenuIsVisible, setHamburgerMenuIsVisible] = useState(false);
 
     useEffect(() => {
-        const onScroll = () => {
-            const updateNavStyle = (scroll: number) => {
-                setNavClass(scroll === 0 ? NAV_STUCK_CLASS : NAV_UNSTUCK_CLASS);
-            };
-            const updateLogoStyle = (scroll: number) => {
-                setLogoSize(scroll === 0 ? LOGO_SIZE_STUCK : LOGO_SIZE_UNSTUCK);
-            };
-
-            const scroll = window.scrollY;
-            updateNavStyle(scroll);
-            updateLogoStyle(scroll);
+        const onWindowResize = () => {
+            const width = window.innerWidth;
+            if (width >= MAX_WINDOW_WIDTH_FOR_MENU) {
+                // Hide the hamburger menu if the window is sufficiently wide
+                setHamburgerMenuIsVisible(false);
+            }
         };
 
-        // Fire the scroll handler pre-emptively to ensure that the initial page scroll is taken into account
-        onScroll();
-
-        window.addEventListener("scroll", onScroll);
+        window.addEventListener("resize", onWindowResize);
 
         return () => {
-            window.removeEventListener("scroll", onScroll);
+            window.removeEventListener("resize", onWindowResize);
         };
-    }, []);
+    });
 
     return (
         <>
-            <nav className={navClass}>
+            <nav className="
+                sticky
+                top-0
+                w-screen
+                bg-dbjf-gray
+                flex
+                justify-between
+                items-center
+                px-10
+                md:px-20
+                duration-standard
+                drop-shadow-lg
+                h-[80px]
+                z-100
+            ">
                 <Link href="/">
-                    <Logo size={logoSize} />
+                    <Logo size={LOGO_SIZE} />
                 </Link>
 
                 <NavItemList navItems={NAV_ITEMS} />

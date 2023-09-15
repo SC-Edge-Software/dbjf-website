@@ -26,9 +26,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="0.27553762"
-     inkscape:cx="274.00977"
-     inkscape:cy="642.38052"
+     inkscape:zoom="0.44974657"
+     inkscape:cx="150.08452"
+     inkscape:cy="520.29302"
      inkscape:window-width="1792"
      inkscape:window-height="1067"
      inkscape:window-x="0"
@@ -60,22 +60,28 @@
        inkscape:label="D &amp; J"><tspan
          sodipodi:role="line"
          id="tspan2"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:136.281px;line-height:1.25;font-family:Silom;-inkscape-font-specification:Silom;fill:#ffffff;stroke-width:0.511049"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:136.281px;line-height:2;font-family:Impact;-inkscape-font-specification:Impact;fill:#ffffff;stroke-width:0.511049"
          x="53.031235"
          y="248.13817">D<tspan
-   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:53.3366px;line-height:1.25;font-family:Silom;-inkscape-font-specification:Silom;fill:#ffffff;stroke-width:0.511049"
+   style="font-size:123.472px"
+   id="tspan1"> </tspan><tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:53.3366px;line-height:2;font-family:Impact;-inkscape-font-specification:Impact;fill:#ffffff;stroke-width:0.511049"
    id="tspan4"
-   dx="-5">&amp;</tspan><tspan
+   dx="-5"><tspan
+     style="font-size:79.375px"
+     id="tspan5">&amp;</tspan><tspan
+     style="font-size:123.472px"
+     id="tspan3"> </tspan></tspan><tspan
    id="tspan6"
-   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:136.275px;line-height:1.25;font-family:Silom;-inkscape-font-specification:Silom;fill:#ffffff;stroke-width:0.511049"
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:136.275px;line-height:2;font-family:Impact;-inkscape-font-specification:Impact;fill:#ffffff;stroke-width:0.511049"
    dx="5">J</tspan></tspan></text>
     <rect
        style="fill:#4cdbff;stroke-width:0.218251"
        id="rect1"
        width="20"
        height="21.51689"
-       x="262.25876"
-       y="185.34239"
+       x="262.82346"
+       y="177.81987"
        transform="matrix(1,0,-0.17364818,0.98480775,0,0)"
        inkscape:label="F Bottom" />
     <rect
@@ -83,45 +89,28 @@
        id="rect13"
        width="21.517036"
        height="40.696186"
-       x="148.17809"
-       y="-303.0123"
+       x="142.57436"
+       y="-303.40195"
        transform="matrix(-0.17364818,0.98480775,-1,0,0,0)"
        inkscape:label="F Top" />
-    <rect
-       style="fill:#ffffff;fill-opacity:1;stroke-width:0.0967094"
-       id="rect2"
-       width="30.238596"
-       height="15.366302"
-       x="39.688751"
-       y="227.09882"
-       inkscape:label="D Mask Bottom" />
-    <rect
-       style="fill:#ffffff;fill-opacity:1;stroke-width:0.073159"
-       id="rect2-7"
-       width="25.609478"
-       height="10.383165"
-       x="57.074722"
-       y="-164.05571"
-       transform="scale(1,-1)"
-       inkscape:label="D Mask Top" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:92.0598px;line-height:1.25;font-family:'Helvetica Neue';-inkscape-font-specification:'Helvetica Neue';display:inline;fill:#2e3537;fill-opacity:1;stroke:none;stroke-width:0.345219"
-       x="68.221581"
-       y="230.69679"
+       x="66.492035"
+       y="231.14912"
        id="text2-6"
        transform="skewX(-10)"
        inkscape:label="B"><tspan
          sodipodi:role="line"
          id="tspan2-5"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:92.0598px;font-family:Silom;-inkscape-font-specification:Silom;fill:#2e3537;fill-opacity:1;stroke-width:0.345219"
-         x="68.221581"
-         y="230.69679">B</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:92.0598px;line-height:2;font-family:Impact;-inkscape-font-specification:Impact;fill:#2e3537;fill-opacity:1;stroke-width:0.345219"
+         x="66.492035"
+         y="231.14912">B</tspan></text>
     <rect
        id="rect9-1-8"
        width="15.916008"
        height="16.161537"
-       x="88.355736"
+       x="83.593231"
        y="206.2513"
        style="fill:#4cdbff;fill-opacity:1;stroke-width:0.112005"
        inkscape:label="B Square"
@@ -143,7 +132,7 @@
        d="m 215.51191,121.01535 -29.58681,14.09392 -29.5868,14.09391 2.58772,-32.66988 2.58771,-32.669874 26.99909,18.575964 z"
        inkscape:transform-center-x="0.91870955"
        inkscape:transform-center-y="-2.6288413"
-       transform="matrix(0.23108096,0.11940148,-0.16385963,0.25213466,42.447402,130.75042)"
+       transform="matrix(0.23108096,0.11940148,-0.16385963,0.25213466,37.155732,129.16291)"
        inkscape:label="B Triangle" />
     <text
        xml:space="preserve"
