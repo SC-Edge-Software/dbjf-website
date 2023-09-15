@@ -8,7 +8,7 @@
    version="1.1"
    id="svg1"
    inkscape:version="1.3 (0e150ed, 2023-07-21)"
-   sodipodi:docname="dbjf_logo_triangle.svg"
+   sodipodi:docname="dbjf_logo.svg"
    inkscape:export-filename="dbjf_logo_triangle.png"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96"
@@ -26,10 +26,10 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="0.59420425"
-     inkscape:cx="360.98699"
-     inkscape:cy="545.26705"
-     inkscape:window-width="1792"
+     inkscape:zoom="0.31803372"
+     inkscape:cx="512.52426"
+     inkscape:cy="918.14162"
+     inkscape:window-width="896"
      inkscape:window-height="1067"
      inkscape:window-x="0"
      inkscape:window-y="25"
@@ -43,7 +43,7 @@
      inkscape:groupmode="layer"
      id="layer1">
     <rect
-       style="fill:#2e3537;fill-opacity:1;stroke-width:2.41388"
+       style="display:inline;fill:#2e3537;fill-opacity:1;stroke-width:2.41388"
        id="rect4"
        width="310.3725"
        height="309.97458"
@@ -53,29 +53,35 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:136.281px;line-height:1.25;font-family:'Helvetica Neue';-inkscape-font-specification:'Helvetica Neue';display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.511049"
-       x="48.614613"
-       y="218.80824"
+       x="48.459213"
+       y="222.20905"
        id="text2"
        transform="skewX(-10)"
        inkscape:label="D &amp; J"><tspan
          sodipodi:role="line"
          id="tspan2"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:136.281px;line-height:1.25;font-family:Silom;-inkscape-font-specification:Silom;fill:#ffffff;stroke-width:0.511049"
-         x="48.614613"
-         y="218.80824">D<tspan
-   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:53.3366px;line-height:1.25;font-family:Silom;-inkscape-font-specification:Silom;fill:#ffffff;stroke-width:0.511049"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:136.281px;line-height:2;font-family:Impact;-inkscape-font-specification:Impact;fill:#ffffff;stroke-width:0.511049"
+         x="48.459213"
+         y="222.20905">D<tspan
+   style="font-size:123.472px"
+   id="tspan1"> </tspan><tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:53.3366px;line-height:2;font-family:Impact;-inkscape-font-specification:Impact;fill:#ffffff;stroke-width:0.511049"
    id="tspan4"
-   dx="-5">&amp;</tspan><tspan
+   dx="-5"><tspan
+     style="font-size:79.375px"
+     id="tspan5">&amp;</tspan><tspan
+     style="font-size:123.472px"
+     id="tspan3"> </tspan></tspan><tspan
    id="tspan6"
-   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:136.275px;line-height:1.25;font-family:Silom;-inkscape-font-specification:Silom;fill:#ffffff;stroke-width:0.511049"
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:136.275px;line-height:2;font-family:Impact;-inkscape-font-specification:Impact;fill:#ffffff;stroke-width:0.511049"
    dx="5">J</tspan></tspan></text>
     <rect
        style="fill:#4cdbff;stroke-width:0.218251"
        id="rect1"
        width="20"
        height="21.51689"
-       x="257.84229"
-       y="155.56001"
+       x="258.25153"
+       y="151.49074"
        transform="matrix(1,0,-0.17364818,0.98480775,0,0)"
        inkscape:label="F Bottom" />
     <rect
@@ -83,49 +89,32 @@
        id="rect13"
        width="21.517036"
        height="40.696186"
-       x="118.3957"
-       y="-298.59583"
+       x="116.2452"
+       y="-298.83002"
        transform="matrix(-0.17364818,0.98480775,-1,0,0,0)"
        inkscape:label="F Top" />
-    <rect
-       style="fill:#ffffff;fill-opacity:1;stroke-width:0.0967094"
-       id="rect2"
-       width="30.238596"
-       height="15.366302"
-       x="40.443794"
-       y="197.76889"
-       inkscape:label="D Mask Bottom" />
-    <rect
-       style="fill:#ffffff;fill-opacity:1;stroke-width:0.073159"
-       id="rect2-7"
-       width="25.609478"
-       height="10.383165"
-       x="57.829765"
-       y="-134.72578"
-       transform="scale(1,-1)"
-       inkscape:label="D Mask Top" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:92.0598px;line-height:1.25;font-family:'Helvetica Neue';-inkscape-font-specification:'Helvetica Neue';display:inline;fill:#2e3537;fill-opacity:1;stroke:none;stroke-width:0.345219"
-       x="63.804962"
-       y="201.36687"
+       x="61.920006"
+       y="205.22"
        id="text2-6"
        transform="skewX(-10)"
        inkscape:label="B"><tspan
          sodipodi:role="line"
          id="tspan2-5"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:92.0598px;font-family:Silom;-inkscape-font-specification:Silom;fill:#2e3537;fill-opacity:1;stroke-width:0.345219"
-         x="63.804962"
-         y="201.36687">B</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:92.0598px;line-height:2;font-family:Impact;-inkscape-font-specification:Impact;fill:#2e3537;fill-opacity:1;stroke-width:0.345219"
+         x="61.920006"
+         y="205.22">B</tspan></text>
     <rect
        id="rect9-1-8"
        width="15.916008"
        height="16.161537"
-       x="83.939117"
-       y="176.46892"
+       x="79.021194"
+       y="179.92216"
        style="fill:#4cdbff;fill-opacity:1;stroke-width:0.112005"
        inkscape:label="B Square"
-       transform="matrix(1,0,-0.17364818,0.98480774,0,0)" />
+       transform="matrix(1,0,-0.17364818,0.98480775,0,0)" />
     <path
        sodipodi:type="star"
        style="fill:#4cdbff;fill-opacity:1;stroke-width:0.264583"
@@ -143,57 +132,56 @@
        d="m 215.51191,121.01535 -29.58681,14.09392 -29.5868,14.09391 2.58772,-32.66988 2.58771,-32.669874 26.99909,18.575964 z"
        inkscape:transform-center-x="0.91870955"
        inkscape:transform-center-y="-2.6288413"
-       transform="matrix(0.23108096,0.11940148,-0.16385963,0.25213466,43.202445,101.42045)"
+       transform="matrix(0.23108096,0.11940148,-0.16385963,0.25213466,37.155732,103.2337)"
        inkscape:label="B Triangle" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:20.4988px;line-height:1.25;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.506186"
-       x="22.685221"
-       y="263.91208"
+       style="font-style:normal;font-weight:normal;font-size:20.4988px;line-height:1.25;font-family:sans-serif;display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.506186"
+       x="21.930176"
+       y="267.31287"
        id="text8"
        inkscape:label="Home Improvements"><tspan
          sodipodi:role="line"
          id="tspan8"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.4988px;font-family:Copperplate;-inkscape-font-specification:Copperplate;stroke-width:0.506186;fill:#ffffff"
-         x="22.685221"
-         y="263.91208">Home Improvements, LLC</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.4988px;font-family:Copperplate;-inkscape-font-specification:Copperplate;fill:#ffffff;stroke-width:0.506186"
+         x="21.930176"
+         y="267.31287">Home Improvements, LLC</tspan></text>
     <path
        id="rect8"
-       style="stroke-width:0.264583;fill:#ffffff"
-       d="M 121.76528 90.479498 L 121.76432 90.480135 L -31.665342 90.479981 L -31.665101 98.271337 L 117.26774 98.27153 L 191.7328 227.24958 L 198.48025 223.3534 L 121.76528 90.479498 z "
-       transform="rotate(-30)"
+       style="fill:#ffffff;stroke-width:0.264583"
+       d="m 149.93651,20.87569 -5.2e-4,0.001 -132.874033,76.714675 3.895887,6.747375 128.979696,-74.466214 128.97766,74.465704 3.89537,-6.747905 z"
        inkscape:label="Roof" />
     <rect
        id="rect9"
        width="19.261347"
        height="19.261347"
-       x="129.05827"
-       y="50.787018"
-       style="stroke-width:0.134513;fill:#4cdbff;fill-opacity:1"
+       x="128.3033"
+       y="54.187813"
+       style="fill:#4cdbff;fill-opacity:1;stroke-width:0.134513"
        inkscape:label="TL" />
     <rect
        id="rect9-9"
        width="19.261347"
        height="19.261347"
-       x="153.20268"
-       y="50.787018"
-       style="stroke-width:0.134513;fill:#4cdbff;fill-opacity:1"
+       x="152.44771"
+       y="54.187813"
+       style="fill:#4cdbff;fill-opacity:1;stroke-width:0.134513"
        inkscape:label="TR" />
     <rect
        id="rect9-1"
        width="19.261347"
        height="19.261347"
-       x="129.05827"
-       y="74.877075"
-       style="stroke-width:0.134513;fill:#4cdbff;fill-opacity:1"
+       x="128.3033"
+       y="78.27784"
+       style="fill:#4cdbff;fill-opacity:1;stroke-width:0.134513"
        inkscape:label="BL" />
     <rect
        id="rect9-9-3"
        width="19.261347"
        height="19.261347"
-       x="153.20268"
-       y="74.877075"
-       style="stroke-width:0.134513;opacity:1;fill:#4cdbff;fill-opacity:1"
+       x="152.44771"
+       y="78.27784"
+       style="opacity:1;fill:#4cdbff;fill-opacity:1;stroke-width:0.134513"
        inkscape:label="BR" />
   </g>
 </svg>
