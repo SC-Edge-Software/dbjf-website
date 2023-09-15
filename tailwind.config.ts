@@ -8,11 +8,20 @@ const config: Config = {
     ],
     theme: {
         extend: {
-            backgroundImage: {
-                "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-                "gradient-conic":
-                    "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+            colors: {
+                "dbjf-gray": "#2e3537ff",
+                "dbjf-dark-gray": "#23282a",
+                "dbjf-blue": "#4cdbffff"
             },
+            transitionDuration: {
+                "standard": "0.2s"
+            },
+            keyframes: {
+                "growY": {
+                    "0%": { transform: "scaleY(0)" },
+                    "100%": { transform: "scaleY(1)" }
+                }
+            }
         },
     },
     plugins: [],
