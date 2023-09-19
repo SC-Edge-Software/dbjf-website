@@ -6,7 +6,7 @@ type HexagonBackgroundType = {
 
 export default function HexagonBackground({ children }: HexagonBackgroundType) {
     return (
-        <div className={`
+        <section className={`
             w-full
             h-96
             gradient-animation
@@ -30,6 +30,6 @@ export default function HexagonBackground({ children }: HexagonBackgroundType) {
                     {children}
                 </div>
             </div>
-        </div>
+        </section>
     );
 }
