@@ -3,7 +3,6 @@ import { usePathname } from "next/navigation";
 
 const NAV_LINK_BASE_CLASS = `
     text-white
-    font-bold
     ml-5
     p-1
     border-transparent

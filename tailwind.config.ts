@@ -9,18 +9,15 @@ const config: Config = {
     theme: {
         extend: {
             colors: {
-                "dbjf-gray": "#2e3537ff",
+                "dbjf-gray": "#2e3537",
                 "dbjf-dark-gray": "#23282a",
-                "dbjf-blue": "#4cdbffff"
+                "dbjf-blue": "#4cdbff"
             },
             transitionDuration: {
                 "standard": "0.2s"
             },
-            keyframes: {
-                "growY": {
-                    "0%": { transform: "scaleY(0)" },
-                    "100%": { transform: "scaleY(1)" }
-                }
+            backgroundImage: {
+                "hexagons": "url('/images/hexagons.svg')"
             }
         },
     },

@@ -3,7 +3,6 @@ import Link from "next/link";
 
 const NAV_LINK_BASE_CLASS = `
     text-white
-    font-bold
     p-1
     border-2
     border-transparent
@@ -35,7 +34,7 @@ export default function HamburgerMenu({ navItems }: HamburgerMenuProps) {
     return (
         <div className="
             bg-dbjf-dark-gray
-            w-48
+            w-full
             sticky
             left-full
             scale-up-ver-top
