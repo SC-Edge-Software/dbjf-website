@@ -11,7 +11,9 @@ const MAX_WINDOW_WIDTH_FOR_MENU = 768;
 const LOGO_SIZE = 80;
 const NAV_ITEMS = {
     "Home": "/",
-    "About Us": "/about",
+    "Our History": "/our-history",
+    "Vision": "/vision",
+    "Why Invest In Your Property?": "/why-invest",
     "Contact Us": "/contact"
 };
 

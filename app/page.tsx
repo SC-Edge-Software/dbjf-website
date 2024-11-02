@@ -14,8 +14,7 @@ export default function Home() {
                     lg:text-6xl
                     text-center
                     font-bold
-                    mx-8
-                ">
+                    mx-8">
                     DB & JF Home Improvements, LLC
                 </h1>
             </HexagonBackground>
@@ -28,8 +27,7 @@ export default function Home() {
             </Section>
 
             <Section className="
-                bg-dbjf-dark-gray
-            ">
+                bg-dbjf-dark-gray">
                 <SectionHeading>Enhance Your Property Value</SectionHeading>
                 <Paragraph>
                     With DB & JF, you can enhance the value of your property through our professional construction and home improvements services. Increase the appeal and functionality of your space!
