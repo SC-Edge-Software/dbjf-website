@@ -38,8 +38,7 @@ export default function NavItemList({ navItems }: NavItemListProps) {
             hidden
             h-full
             md:flex
-            items-center
-        ">
+            items-center">
             {Object.keys(navItems).map(linkName => {
                 const link = navItems[linkName];
                 return (

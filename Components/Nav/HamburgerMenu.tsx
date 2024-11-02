@@ -42,14 +42,12 @@ export default function HamburgerMenu({ navItems }: HamburgerMenuProps) {
             drop-shadow-lg
             duration-standard
             top-[80px]
-            z-90
-        ">
+            z-90">
             <ul className="
                 flex
                 flex-col
                 justify-start
-                items-center
-            ">
+                items-center">
                 {Object.keys(navItems).map(linkName => {
                     const link = navItems[linkName];
                     return (

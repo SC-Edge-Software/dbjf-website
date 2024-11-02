@@ -7,12 +7,10 @@ export default function Footer() {
             justify-center
             items-center
             p-10
-            bg-dbjf-dark-gray
-        ">
+            bg-dbjf-dark-gray">
             <Paragraph className="
                 text-center
-                text-xs
-            ">
+                text-xs">
                 © 2023 DB & JF Home Improvements, LLC. All Rights Reserved.
             </Paragraph>
         </footer>

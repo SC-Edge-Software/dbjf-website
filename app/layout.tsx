@@ -4,7 +4,7 @@ import Footer from "@/Components/Footer/Footer";
 import "./globals.css";
 
 export const metadata: Metadata = {
-    title: "DB & JF Home Improvements LLC",
+    title: "DB & JF Home Improvements",
     description: "Company website for DB & JF Home Improvements LLC",
 };
 

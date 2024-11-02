@@ -9,15 +9,13 @@ export default function HexagonBackground({ children }: HexagonBackgroundType) {
         <section className={`
             w-full
             h-96
-            gradient-animation
-        `}>
+            gradient-animation`}>
             <div className="
                 w-full
                 h-full
                 bg-hexagons
                 bg-no-repeat
-                bg-cover
-            ">
+                bg-cover">
                 <div className="
                     w-full
                     h-full
@@ -25,8 +23,7 @@ export default function HexagonBackground({ children }: HexagonBackgroundType) {
                     bg-opacity-40
                     flex
                     justify-center
-                    items-center
-                ">
+                    items-center">
                     {children}
                 </div>
             </div>

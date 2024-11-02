@@ -37,8 +37,7 @@ export default function Hamburger({ hamburgerMenuIsVisible, setHamburgerMenuIsVi
             justify-between
             items-center
             md:hidden
-            hover:cursor-pointer
-        ">
+            hover:cursor-pointer">
             <div className={firstBarClass}></div>
             <div className={secondBarClass}></div>
             <div className={thirdBarClass}></div>

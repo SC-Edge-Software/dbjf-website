@@ -12,7 +12,6 @@ export default function Logo({ size }: LogoProps) {
             alt="DB & JF Home Improvements LLC Logo"
             width={size}
             height={size}
-            className="duration-standard"
-        />
+            className="duration-standard"/>
     );
 }

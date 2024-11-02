@@ -49,8 +49,7 @@ export default function Nav() {
                 duration-standard
                 drop-shadow-lg
                 h-[80px]
-                z-100
-            ">
+                z-100">
                 <Link href="/">
                     <Logo size={LOGO_SIZE} />
                 </Link>
