@@ -11,7 +11,7 @@ export default function Footer() {
             <Paragraph className="
                 text-center
                 text-xs">
-                © 2023 DB & JF Home Improvements, LLC. All Rights Reserved.
+                © 2025 DB & JF Home Improvements, LLC. All Rights Reserved.
             </Paragraph>
         </footer>
     );
