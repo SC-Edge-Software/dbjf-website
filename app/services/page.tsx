@@ -1,7 +1,7 @@
-export default function OurHistory() {
+export default function Services() {
     return (
         <main>
-            
+
         </main>
     );
 }

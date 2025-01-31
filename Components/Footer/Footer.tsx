@@ -1,5 +1,3 @@
-import Paragraph from "../Paragraph/Paragraph";
-
 export default function Footer() {
     return (
         <footer className="
@@ -8,11 +6,11 @@ export default function Footer() {
             items-center
             p-10
             bg-dbjf-dark-gray">
-            <Paragraph className="
+            <p className="
                 text-center
                 text-xs">
                 © 2025 DB & JF Home Improvements, LLC. All Rights Reserved.
-            </Paragraph>
+            </p>
         </footer>
     );
 }

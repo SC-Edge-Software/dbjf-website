@@ -1,4 +1,4 @@
-export default function WhyInvest() {
+export default function AboutUs() {
     return (
         <main>
             
