@@ -3,7 +3,6 @@ import { usePathname } from "next/navigation";
 
 const NAV_LINK_BASE_CLASS = `
     text-white
-    font-bold
     ml-5
     p-1
     border-transparent
@@ -39,8 +38,7 @@ export default function NavItemList({ navItems }: NavItemListProps) {
             hidden
             h-full
             md:flex
-            items-center
-        ">
+            items-center">
             {Object.keys(navItems).map(linkName => {
                 const link = navItems[linkName];
                 return (

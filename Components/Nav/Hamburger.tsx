@@ -17,14 +17,14 @@ export default function Hamburger({ hamburgerMenuIsVisible, setHamburgerMenuIsVi
     if (hamburgerMenuIsVisible) {
         firstBarClass += `
             rotate-45
-            translate-y-[7px] 
+            translate-y-[9px] 
         `;
         secondBarClass += `
             hidden
         `;
         thirdBarClass += `
             -rotate-45
-            -translate-y-[7px]
+            -translate-y-[9px]
         `;
     }
 
@@ -37,8 +37,7 @@ export default function Hamburger({ hamburgerMenuIsVisible, setHamburgerMenuIsVi
             justify-between
             items-center
             md:hidden
-            hover:cursor-pointer
-        ">
+            hover:cursor-pointer">
             <div className={firstBarClass}></div>
             <div className={secondBarClass}></div>
             <div className={thirdBarClass}></div>

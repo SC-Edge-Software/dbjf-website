@@ -11,7 +11,8 @@ const MAX_WINDOW_WIDTH_FOR_MENU = 768;
 const LOGO_SIZE = 80;
 const NAV_ITEMS = {
     "Home": "/",
-    "About Us": "/about",
+    "About Us": "/about-us",
+    "Services": "/services",
     "Contact Us": "/contact"
 };
 
@@ -39,7 +40,6 @@ export default function Nav() {
             <nav className="
                 sticky
                 top-0
-                w-screen
                 bg-dbjf-gray
                 flex
                 justify-between
@@ -49,8 +49,7 @@ export default function Nav() {
                 duration-standard
                 drop-shadow-lg
                 h-[80px]
-                z-100
-            ">
+                z-50">
                 <Link href="/">
                     <Logo size={LOGO_SIZE} />
                 </Link>
