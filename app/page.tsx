@@ -1,8 +1,40 @@
 import HexagonBackground from "@/Components/HexagonBackground/HexagonBackground";
 import Section from "@/Components/Section/Section";
-import Image from "next/image";
+import TripleImageDisplay from "@/Components/TripleImageDisplay/TripleImageDisplay";
+import { FaArrowRightLong } from "react-icons/fa6"; import Image from "next/image";
 
 export default function Home() {
+    const imageWidth = 800;
+    const imageHeight = 400;
+    const headerClass = "text-white text-4xl font-bold text-center";
+    const imageClass = "rounded-lg shadow-lg";
+    const headerLinkClass = `
+        border-2 
+        border-white 
+        hover:border-dbjf-blue
+        hover:text-dbjf-blue
+        duration-200
+        rounded-md
+        bg-black/50 
+        px-5 
+        md:py-2 
+        mb-4
+        md:mb-0 
+        md:text-xl`;
+    const expertiseReasonContainerClass = `
+        grid 
+        grid-cols-1 
+        lg:grid-cols-2 
+        items-center
+        gap-4
+        lg:gap-8`;
+    const expertiseReasonClass = `
+        text-white 
+        text-md
+        lg:text-lg
+        2xl:text-xl`;
+    const arrowRight = <FaArrowRightLong className="inline ml-1 mb-[2px]" />;
+
     return (
         <main>
             <HexagonBackground>
@@ -15,50 +47,170 @@ export default function Home() {
                     mx-8">
                     DB & JF Home Improvements, LLC
                 </h1>
+                <div className="mt-20 flex flex-col md:flex-row justify-between md:w-[500px]">
+                    <a className={headerLinkClass} href="/services">
+                        See Our Services {arrowRight}
+                    </a>
+                    <a className={headerLinkClass} href="/contact">
+                        Contact Us Today! {arrowRight}
+                    </a>
+                </div>
             </HexagonBackground>
 
-            <Section>
-                <h2>Welcome to DB & JF Home Improvements</h2>
-                <p className="mb-1"><i>Where Vision Becomes Reality</i></p>
-                <Image 
-                    src="/images/interior_1.png" 
-                    alt="Interior Photo" 
-                    width={800}
-                    height={400}
-                    className="my-5" />
+            {/* Splash Image */}
+            <Section className="flex flex-col justify-between !pt-0">
+                <div className="
+                    relative 
+                    w-screen 
+                    h-[300px] 
+                    sm:h-[400px]
+                    md:h-[450px]
+                    lg:h-[550px]
+                    left-1/2 
+                    right-1/2 
+                    -ml-[50vw] 
+                    -mr-[50vw] 
+                    mb-10">
+                    <Image
+                        src="/images/interior_1.jpeg"
+                        alt="Interior Photo"
+                        fill
+                        className="object-cover z-0"
+                        priority
+                    />
+                    <div className="
+                        w-full
+                        h-full
+                        lg:pl-10
+                        relative
+                        flex
+                        items-center
+                        bg-black/50">
+                        <h1 className="
+                            text-white
+                            text-[2em]
+                            sm:text-[2.5em]
+                            lg:text-[3em]
+                            xl:text-[3.5em]
+                            leading-[1em]
+                            z-10
+                            w-[70%]
+                            pl-10">
+                            A contractor you can trust.
+                        </h1>
+                    </div>
+                </div>
+
                 <p>
                     At <strong>DB & JF Home Improvements</strong>, we believe that every home and business deserves expert craftsmanship, honest service, and high-quality results. Whether you&rsquo;re looking to renovate, expand, or enhance your property, our skilled professionals are here to bring your vision to life.
                 </p>
+                <TripleImageDisplay
+                    className="my-10"
+                    images={[
+                        {src: "/images/modern_kitchen.jpg", alt: "Modern Kitchen", className: imageClass},
+                        {src: "/images/modern_bathroom.jpg", alt: "Modern Bathroom", className: imageClass},
+                        {src: "/images/modern_living_room.jpg", alt: "Modern Living Room", className: imageClass}]} />
             </Section>
 
-            <Section className="bg-dbjf-dark-gray">
-                <h2>Why Choose Us?</h2>
-                <ul>
-                    <li><strong>Expertise You Can Trust</strong> &ndash; With years of experience in the industry, our team is dedicated to delivering exceptional workmanship on every project.</li>
-                    <li><strong>Comprehensive Services</strong> &ndash; From home additions and remodeling to roofing, siding, and interior renovations, we handle all aspects of construction and improvement.</li>
-                    <li><strong>Personalized Approach</strong> &ndash; We work closely with our clients to ensure each project is tailored to their specific needs, style, and budget.</li>
-                    <li><strong>Reliability &amp; Integrity</strong> &ndash; Built on a foundation of trust, professionalism, and hard work, we strive to exceed expectations in every detail.</li>
-                </ul>
+            {/* Why Choose Us? */}
+            <Section className="bg-dbjf-dark-gray space-y-10 !pt-10 !pb-20 xl:!px-[200px] 2xl:!px-[350px]">
+                <h2 className={headerClass}>Why Choose Us?</h2>
+
+                <div className={expertiseReasonContainerClass}>
+                    <div className="order-1 lg:order-1">
+                        <p className={expertiseReasonClass}>
+                            <strong className={expertiseReasonClass}>Expertise You Can Trust:</strong> With years of experience in the industry, our team is dedicated to delivering exceptional workmanship on every project.
+                        </p>
+                    </div>
+                    <div className="order-2 lg:order-2">
+                        <Image
+                            src="/images/working_2.jpg"
+                            alt="Interior Photo"
+                            width={imageWidth}
+                            height={imageHeight}
+                            className={imageClass}
+                        />
+                    </div>
+                </div>
+
+                <div className={expertiseReasonContainerClass}>
+                    <div className="order-1 lg:order-2">
+                        <p className={expertiseReasonClass}>
+                            <strong className={expertiseReasonClass}>Comprehensive Services:&nbsp;</strong> 
+                            From home additions and remodeling to roofing, siding, and interior renovations, we handle all aspects of construction and improvement.&nbsp;
+                        </p>
+                        <a 
+                            href="/services"
+                            className={`
+                                ${expertiseReasonClass}
+                                text-dbjf-blue
+                                underline
+                            `}>
+                            See our services.
+                        </a>
+                    </div>
+                    <div className="order-2 lg:order-1">
+                        <Image
+                            src="/images/architect.jpeg"
+                            alt="Interior Photo"
+                            width={imageWidth}
+                            height={imageHeight}
+                            className={imageClass}
+                        />
+                    </div>
+                </div>
+
+                <div className={expertiseReasonContainerClass}>
+                    <div className="order-1 lg:order-1">
+                        <p className={expertiseReasonClass}>
+                            <strong className={expertiseReasonClass}>Personalized Approach:</strong> We work closely with our clients to ensure each project is tailored to their specific needs, style, and budget. 
+                        </p>
+                    </div>
+                    <div className="order-2 lg:order-2">
+                        <Image
+                            src="/images/contractor_homeowner.jpg"
+                            alt="Interior Photo"
+                            width={imageWidth}
+                            height={imageHeight}
+                            className={imageClass}
+                        />
+                    </div>
+                </div>
+
+                <div className={expertiseReasonContainerClass}>
+                    <div className="order-1 lg:order-2">
+                        <p className={expertiseReasonClass}>
+                            <strong className={expertiseReasonClass}>Reliability &amp; Integrity:</strong> Built on a foundation of trust, professionalism, and hard work, we strive to exceed expectations in every detail.
+                        </p>
+                    </div>
+                    <div className="order-2 lg:order-1">
+                        <Image
+                            src="/images/handshake.jpg"
+                            alt="Interior Photo"
+                            width={imageWidth}
+                            height={imageHeight}
+                            className={imageClass} />
+                    </div>
+                </div>
             </Section>
 
-            <Section>
-                <h2>Our Services</h2>
-                <ul>
-                    <li><strong>Home Renovations &amp; Additions</strong> &ndash; Upgrade your living space with custom remodeling and seamless expansions.</li>
-                    <li><strong>Exterior Improvements</strong> &ndash; From roofing and siding to decks and fencing, we enhance curb appeal and durability.</li>
-                    <li><strong>Interior Transformations</strong> &ndash; Kitchen and bathroom remodels, basement makeovers, flooring, and more.</li>
-                    <li><strong>General Contracting</strong> &ndash; Electrical, plumbing, framing, drywall, and comprehensive construction solutions.</li>
-                </ul>
-            </Section>
-
-            <Section className="bg-dbjf-dark-gray">
-                <h2>Let&rsquo;s Build Something Amazing Together!</h2>
-                <p>
+            {/* Let's Build Something Amazing Together */}
+            <Section className="!pt-10">
+                <h2 className={headerClass}>Let&rsquo;s Build Something Amazing Together!</h2>
+                <p className="mt-10">
                     Whether you have a clear vision or need expert guidance, DB &amp; JF Home Improvements is ready to make your dream project a reality. Explore our services and see why homeowners and businesses trust us for their construction needs.
                 </p>
+                <br/>
                 <p>
-                    <strong>Get in Touch Today!</strong> Have questions or ready to start your project? <a href="#">Contact us</a> for a consultation, and let&rsquo;s bring your vision to life!
+                    Have questions or ready to start your project? <a className="underline hover:text-dbjf-blue" href="/contact">Contact us</a> for a consultation, and let&rsquo;s bring your vision to life!
                 </p>
+
+                <TripleImageDisplay
+                    className="my-10"
+                    images={[
+                        {src: "/images/mudroom.jpg", alt: "Mudroom", className: imageClass},
+                        {src: "/images/home_office.jpg", alt: "Home Office", className: imageClass},
+                        {src: "/images/modern_living_room_2.jpg", alt: "Modern Living Room", className: imageClass}]} />
             </Section>
         </main>
     );

@@ -22,6 +22,7 @@ export default function HexagonBackground({ children }: HexagonBackgroundType) {
                     bg-black
                     bg-opacity-40
                     flex
+                    flex-col
                     justify-center
                     items-center">
                     {children}

@@ -42,7 +42,7 @@ export default function HamburgerMenu({ navItems }: HamburgerMenuProps) {
             drop-shadow-lg
             duration-standard
             top-[80px]
-            z-90">
+            z-40">
             <ul className="
                 flex
                 flex-col

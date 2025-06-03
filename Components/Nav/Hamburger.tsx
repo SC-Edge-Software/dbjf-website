@@ -17,14 +17,14 @@ export default function Hamburger({ hamburgerMenuIsVisible, setHamburgerMenuIsVi
     if (hamburgerMenuIsVisible) {
         firstBarClass += `
             rotate-45
-            translate-y-[7px] 
+            translate-y-[9px] 
         `;
         secondBarClass += `
             hidden
         `;
         thirdBarClass += `
             -rotate-45
-            -translate-y-[7px]
+            -translate-y-[9px]
         `;
     }
 
