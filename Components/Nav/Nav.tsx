@@ -62,7 +62,7 @@ export default function Nav() {
                 />
             </nav>
 
-            {hamburgerMenuIsVisible && <HamburgerMenu navItems={NAV_ITEMS} />}
+            {hamburgerMenuIsVisible && <HamburgerMenu navItems={NAV_ITEMS} setHamburgerMenuIsVisible={setHamburgerMenuIsVisible} />}
         </>
     );
 }

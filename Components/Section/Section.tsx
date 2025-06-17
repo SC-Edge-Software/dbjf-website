@@ -9,9 +9,10 @@ export default function Section({ className, children }: SectionProps) {
             ${className ?? ""}
             w-full
             px-10
-            py-5
+            py-10
             md:px-16
-            xl:px-32`}>
+            lg:px-24
+            xl:px-52`}>
             {children}
         </section>
     );

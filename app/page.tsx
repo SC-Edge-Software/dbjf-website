@@ -1,13 +1,15 @@
+import BuildSomethingAmazing from "@/Components/BuildSomethingAmazingSection/BuildSomethingAmazing";
+import H2 from "@/Components/H2/H2";
 import HexagonBackground from "@/Components/HexagonBackground/HexagonBackground";
 import Section from "@/Components/Section/Section";
-import TripleImageDisplay from "@/Components/TripleImageDisplay/TripleImageDisplay";
-import { FaArrowRightLong } from "react-icons/fa6"; import Image from "next/image";
+import StyledImage from "@/Components/StyledImage/StyledImage";
+import ThreeImageDisplay from "@/Components/ThreeImageDisplay/ThreeImageDisplay";
+import Image from "next/image";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 export default function Home() {
     const imageWidth = 800;
     const imageHeight = 400;
-    const headerClass = "text-white text-4xl font-bold text-center";
-    const imageClass = "rounded-lg shadow-lg";
     const headerLinkClass = `
         border-2 
         border-white 
@@ -104,17 +106,17 @@ export default function Home() {
                 <p>
                     At <strong>DB & JF Home Improvements</strong>, we believe that every home and business deserves expert craftsmanship, honest service, and high-quality results. Whether you&rsquo;re looking to renovate, expand, or enhance your property, our skilled professionals are here to bring your vision to life.
                 </p>
-                <TripleImageDisplay
-                    className="my-10"
+                <ThreeImageDisplay
+                    className="mt-10"
                     images={[
-                        {src: "/images/modern_kitchen.jpg", alt: "Modern Kitchen", className: imageClass},
-                        {src: "/images/modern_bathroom.jpg", alt: "Modern Bathroom", className: imageClass},
-                        {src: "/images/modern_living_room.jpg", alt: "Modern Living Room", className: imageClass}]} />
+                        {src: "/images/modern_kitchen.jpg", alt: "Modern Kitchen"},
+                        {src: "/images/modern_bathroom.jpg", alt: "Modern Bathroom"},
+                        {src: "/images/modern_living_room.jpg", alt: "Modern Living Room"}]} />
             </Section>
 
             {/* Why Choose Us? */}
-            <Section className="bg-dbjf-dark-gray space-y-10 !pt-10 !pb-20 xl:!px-[200px] 2xl:!px-[350px]">
-                <h2 className={headerClass}>Why Choose Us?</h2>
+            <Section className="bg-dbjf-dark-gray space-y-10 2xl:!px-[350px]">
+                <H2>Why Choose Us?</H2>
 
                 <div className={expertiseReasonContainerClass}>
                     <div className="order-1 lg:order-1">
@@ -123,12 +125,11 @@ export default function Home() {
                         </p>
                     </div>
                     <div className="order-2 lg:order-2">
-                        <Image
+                        <StyledImage
                             src="/images/working_2.jpg"
                             alt="Interior Photo"
                             width={imageWidth}
                             height={imageHeight}
-                            className={imageClass}
                         />
                     </div>
                 </div>
@@ -143,19 +144,19 @@ export default function Home() {
                             href="/services"
                             className={`
                                 ${expertiseReasonClass}
-                                text-dbjf-blue
+                                hover:text-dbjf-blue
                                 underline
+                                serif-link
                             `}>
                             See our services.
                         </a>
                     </div>
                     <div className="order-2 lg:order-1">
-                        <Image
+                        <StyledImage
                             src="/images/architect.jpeg"
                             alt="Interior Photo"
                             width={imageWidth}
                             height={imageHeight}
-                            className={imageClass}
                         />
                     </div>
                 </div>
@@ -167,13 +168,11 @@ export default function Home() {
                         </p>
                     </div>
                     <div className="order-2 lg:order-2">
-                        <Image
+                        <StyledImage
                             src="/images/contractor_homeowner.jpg"
                             alt="Interior Photo"
                             width={imageWidth}
-                            height={imageHeight}
-                            className={imageClass}
-                        />
+                            height={imageHeight} />
                     </div>
                 </div>
 
@@ -184,34 +183,17 @@ export default function Home() {
                         </p>
                     </div>
                     <div className="order-2 lg:order-1">
-                        <Image
+                        <StyledImage
                             src="/images/handshake.jpg"
                             alt="Interior Photo"
                             width={imageWidth}
-                            height={imageHeight}
-                            className={imageClass} />
+                            height={imageHeight} />
                     </div>
                 </div>
             </Section>
 
             {/* Let's Build Something Amazing Together */}
-            <Section className="!pt-10">
-                <h2 className={headerClass}>Let&rsquo;s Build Something Amazing Together!</h2>
-                <p className="mt-10">
-                    Whether you have a clear vision or need expert guidance, DB &amp; JF Home Improvements is ready to make your dream project a reality. Explore our services and see why homeowners and businesses trust us for their construction needs.
-                </p>
-                <br/>
-                <p>
-                    Have questions or ready to start your project? <a className="underline hover:text-dbjf-blue" href="/contact">Contact us</a> for a consultation, and let&rsquo;s bring your vision to life!
-                </p>
-
-                <TripleImageDisplay
-                    className="my-10"
-                    images={[
-                        {src: "/images/mudroom.jpg", alt: "Mudroom", className: imageClass},
-                        {src: "/images/home_office.jpg", alt: "Home Office", className: imageClass},
-                        {src: "/images/modern_living_room_2.jpg", alt: "Modern Living Room", className: imageClass}]} />
-            </Section>
+            <BuildSomethingAmazing />
         </main>
     );
 }

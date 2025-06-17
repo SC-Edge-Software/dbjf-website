@@ -1,11 +1,11 @@
-import Image from "next/image";
+import StyledImage from "../StyledImage/StyledImage";
 
-interface TripleImageDisplayProps {
-    images: { src: string; alt: string, className?: string }[];
+type ThreeImageDisplay = {
+    images: { src: string; alt: string }[];
     className?: string;
 }
 
-export default function TripleImageDisplay({ images, className }: TripleImageDisplayProps) {
+export default function ThreeImageDisplay({ images, className }: ThreeImageDisplay) {
     if (images.length !== 3) {
         console.error("TripleImageDisplay expects exactly 3 images.");
         return null;
@@ -31,13 +31,12 @@ export default function TripleImageDisplay({ images, className }: TripleImageDis
                         h-full 
                         overflow-hidden 
                         rounded-md">
-                    <Image
+                    <StyledImage
                         src={image.src}
                         alt={image.alt}
                         fill
-                        className={`${image.className ?? ""} object-cover`}
-                        sizes="(max-width: 1024px) 100vw, 33vw"
-                    />
+                        className="object-cover"
+                        sizes="(max-width: 1024px) 100vw, 33vw" />
                 </div>
             ))}
         </div>

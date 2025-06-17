@@ -22,9 +22,10 @@ const NAV_LINK_INACTIVE_CLASS = `
 
 type HamburgerMenuProps = {
     navItems: Record<string, string>
+    setHamburgerMenuIsVisible: (isVisible: boolean) => void
 }
 
-export default function HamburgerMenu({ navItems }: HamburgerMenuProps) {
+export default function HamburgerMenu({ navItems, setHamburgerMenuIsVisible }: HamburgerMenuProps) {
     const currentUrl = usePathname();
 
     const isLinkActive = (link: string): boolean => {
@@ -51,7 +52,7 @@ export default function HamburgerMenu({ navItems }: HamburgerMenuProps) {
                 {Object.keys(navItems).map(linkName => {
                     const link = navItems[linkName];
                     return (
-                        <li key={link + "-hamburger-menu"} className="my-4">
+                        <li key={link + "-hamburger-menu"} className="my-4" onClick={() => setHamburgerMenuIsVisible(false)}>
                             <Link href={link}  className={isLinkActive(link) ? NAV_LINK_ACTIVE_CLASS : NAV_LINK_INACTIVE_CLASS}>{linkName}</Link>
                         </li>
                     );
