@@ -8,7 +8,8 @@ export default function Section({ className, children }: SectionProps) {
         <section className={`
             ${className ?? ""}
             w-full
-            px-10
+            px-6
+            sm:px-10
             py-10
             md:px-16
             lg:px-24

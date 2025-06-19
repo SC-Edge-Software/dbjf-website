@@ -1,3 +1,5 @@
+import AITD_text from "@/Components/AlternatingImageTextDisplay/AITD_text";
+import AlternatingImageTextDisplay from "@/Components/AlternatingImageTextDisplay/AlternatingImageTextDisplay";
 import BuildSomethingAmazing from "@/Components/BuildSomethingAmazingSection/BuildSomethingAmazing";
 import H2 from "@/Components/H2/H2";
 import HexagonBackground from "@/Components/HexagonBackground/HexagonBackground";
@@ -8,8 +10,8 @@ import Image from "next/image";
 import { FaArrowRightLong } from "react-icons/fa6";
 
 export default function Home() {
-    const imageWidth = 800;
-    const imageHeight = 400;
+    const imageWidth = 1200;
+    const imageHeight = 0;
     const headerLinkClass = `
         border-2 
         border-white 
@@ -23,13 +25,6 @@ export default function Home() {
         mb-4
         md:mb-0 
         md:text-xl`;
-    const expertiseReasonContainerClass = `
-        grid 
-        grid-cols-1 
-        lg:grid-cols-2 
-        items-center
-        gap-4
-        lg:gap-8`;
     const expertiseReasonClass = `
         text-white 
         text-md
@@ -109,87 +104,77 @@ export default function Home() {
                 <ThreeImageDisplay
                     className="mt-10"
                     images={[
-                        {src: "/images/modern_kitchen.jpg", alt: "Modern Kitchen"},
-                        {src: "/images/modern_bathroom.jpg", alt: "Modern Bathroom"},
-                        {src: "/images/modern_living_room.jpg", alt: "Modern Living Room"}]} />
+                        { src: "/images/modern_kitchen.jpg", alt: "Modern Kitchen" },
+                        { src: "/images/modern_bathroom.jpg", alt: "Modern Bathroom" },
+                        { src: "/images/modern_living_room.jpg", alt: "Modern Living Room" }]} />
             </Section>
 
             {/* Why Choose Us? */}
             <Section className="bg-dbjf-dark-gray space-y-10 2xl:!px-[350px]">
                 <H2>Why Choose Us?</H2>
 
-                <div className={expertiseReasonContainerClass}>
-                    <div className="order-1 lg:order-1">
-                        <p className={expertiseReasonClass}>
-                            <strong className={expertiseReasonClass}>Expertise You Can Trust:</strong> With years of experience in the industry, our team is dedicated to delivering exceptional workmanship on every project.
-                        </p>
-                    </div>
-                    <div className="order-2 lg:order-2">
-                        <StyledImage
-                            src="/images/working_2.jpg"
-                            alt="Interior Photo"
-                            width={imageWidth}
-                            height={imageHeight}
-                        />
-                    </div>
-                </div>
-
-                <div className={expertiseReasonContainerClass}>
-                    <div className="order-1 lg:order-2">
-                        <p className={expertiseReasonClass}>
-                            <strong className={expertiseReasonClass}>Comprehensive Services:&nbsp;</strong> 
-                            From home additions and remodeling to roofing, siding, and interior renovations, we handle all aspects of construction and improvement.&nbsp;
-                        </p>
-                        <a 
-                            href="/services"
-                            className={`
-                                ${expertiseReasonClass}
-                                hover:text-dbjf-blue
-                                underline
-                                serif-link
-                            `}>
-                            See our services.
-                        </a>
-                    </div>
-                    <div className="order-2 lg:order-1">
-                        <StyledImage
-                            src="/images/architect.jpeg"
-                            alt="Interior Photo"
-                            width={imageWidth}
-                            height={imageHeight}
-                        />
-                    </div>
-                </div>
-
-                <div className={expertiseReasonContainerClass}>
-                    <div className="order-1 lg:order-1">
-                        <p className={expertiseReasonClass}>
-                            <strong className={expertiseReasonClass}>Personalized Approach:</strong> We work closely with our clients to ensure each project is tailored to their specific needs, style, and budget. 
-                        </p>
-                    </div>
-                    <div className="order-2 lg:order-2">
-                        <StyledImage
-                            src="/images/contractor_homeowner.jpg"
-                            alt="Interior Photo"
-                            width={imageWidth}
-                            height={imageHeight} />
-                    </div>
-                </div>
-
-                <div className={expertiseReasonContainerClass}>
-                    <div className="order-1 lg:order-2">
-                        <p className={expertiseReasonClass}>
-                            <strong className={expertiseReasonClass}>Reliability &amp; Integrity:</strong> Built on a foundation of trust, professionalism, and hard work, we strive to exceed expectations in every detail.
-                        </p>
-                    </div>
-                    <div className="order-2 lg:order-1">
-                        <StyledImage
-                            src="/images/handshake.jpg"
-                            alt="Interior Photo"
-                            width={imageWidth}
-                            height={imageHeight} />
-                    </div>
-                </div>
+                <AlternatingImageTextDisplay
+                    items={[
+                        {
+                            text:
+                                <AITD_text 
+                                    title="Expertise You Can Trust:"
+                                    text="With years of experience in the industry, our team is dedicated to delivering exceptional workmanship on every project." />,
+                            image:
+                                <StyledImage
+                                    src="/images/working_2.jpg"
+                                    alt="Interior Photo"
+                                    width={imageWidth}
+                                    height={imageHeight} />
+                        },
+                        {
+                            text:
+                                <>
+                                    <AITD_text 
+                                        title="Comprehensive Services:"
+                                        text="From home additions and remodeling to roofing, siding, and interior renovations, we handle all aspects of construction and improvement." />
+                                    <a
+                                        href="/services"
+                                        className={`
+                                        ${expertiseReasonClass}
+                                        hover:text-dbjf-blue
+                                        underline
+                                        serif-link`}>
+                                        See our services.
+                                    </a>
+                                </>,
+                            image:
+                                <StyledImage
+                                    src="/images/architect.jpeg"
+                                    alt="Interior Photo"
+                                    width={imageWidth}
+                                    height={imageHeight} />
+                        },
+                        {
+                            text:
+                                <AITD_text 
+                                    title="Personalized Approach:"
+                                    text="We work closely with our clients to ensure each project is tailored to their specific needs, style, and budget." />,
+                            image:
+                                <StyledImage
+                                    src="/images/contractor_homeowner.jpg"
+                                    alt="Interior Photo"
+                                    width={imageWidth}
+                                    height={imageHeight} />
+                        },
+                        {
+                            text:
+                                <AITD_text 
+                                    title="Reliability & Integrity:"
+                                    text="Built on a foundation of trust, professionalism, and hard work, we strive to exceed expectations in every detail." />,
+                            image:
+                                <StyledImage
+                                    src="/images/handshake.jpg"
+                                    alt="Interior Photo"
+                                    width={imageWidth}
+                                    height={imageHeight} />
+                        }
+                    ]} />
             </Section>
 
             {/* Let's Build Something Amazing Together */}

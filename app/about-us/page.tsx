@@ -7,7 +7,7 @@ export default function About() {
     return (
         <main>
             {/* Building Trust Through Craftsmanship */}
-            <Section>
+            <Section className="bg-dbjf-dark-gray">
                 <H2>Building Trust Through Craftsmanship</H2>
                 <p>
                     At <strong>DB &amp; JF Home Improvements, LLC</strong>, we&apos;re more than just contractors — we’re partners in building the spaces where life happens. Our journey began with a shared commitment to quality construction, honest communication, and meaningful relationships with our clients. Over the years, we’ve built a reputation for reliability, creativity, and results that speak for themselves.
@@ -22,7 +22,7 @@ export default function About() {
             </Section>
 
             {/* Our Mission */}
-            <Section className="bg-dbjf-dark-gray">
+            <Section>
                 <H2>Our Mission</H2>
                 <p>
                     We believe that every home and business deserves to be functional, beautiful, and built to last. Our mission is simple: <strong>Deliver exceptional workmanship and a seamless customer experience — every time.</strong>
@@ -30,7 +30,7 @@ export default function About() {
             </Section>
 
             {/* What Sets Us Apart */}
-            <Section>
+            <Section className="bg-dbjf-dark-gray">
                 <H2>What Sets Us Apart</H2>
                 <ul className="space-y-4">
                     <li>
@@ -56,14 +56,14 @@ export default function About() {
             </Section>
 
             {/* A Team You Can Rely On */}
-            <Section className="bg-dbjf-dark-gray">
+            <Section>
                 <H2>A Team You Can Rely On</H2>
                 <p>
                     Our team is made up of skilled professionals who take pride in their work. We collaborate closely with homeowners, architects, designers, and subcontractors to ensure each project is smooth, efficient, and built to the highest standards.
                 </p>
             </Section>
 
-            <BuildSomethingAmazing />
+            <BuildSomethingAmazing className="bg-dbjf-dark-gray" />
         </main>
     );
 }

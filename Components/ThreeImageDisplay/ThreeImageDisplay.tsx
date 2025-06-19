@@ -23,7 +23,7 @@ export default function ThreeImageDisplay({ images, className }: ThreeImageDispl
             gap-4`}>
             {images.map((image, index) => (
                 <div
-                    key={index}
+                    key={`three-image-display-${index}`}
                     className="
                         relative 
                         flex-1 

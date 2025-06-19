@@ -1,14 +1,14 @@
 import Image from "next/image";
 
 type StyledImageProps = {
-    src: string;
-    alt: string;
-    width?: number;
-    height?: number;
-    fill?: boolean;
-    sizes?: string;
-    className?: string;
-};
+    src: string
+    alt: string
+    width?: number
+    height?: number
+    fill?: boolean
+    sizes?: string
+    className?: string
+}
 
 export default function StyledImage(props: StyledImageProps) {
     return (
