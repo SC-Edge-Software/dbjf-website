@@ -5,7 +5,7 @@ import ThreeImageDisplay from "@/Components/ThreeImageDisplay/ThreeImageDisplay"
 
 export default function About() {
     return (
-        <main>
+        <>
             {/* Building Trust Through Craftsmanship */}
             <Section className="bg-dbjf-dark-gray">
                 <H2>Building Trust Through Craftsmanship</H2>
@@ -64,6 +64,6 @@ export default function About() {
             </Section>
 
             <BuildSomethingAmazing className="bg-dbjf-dark-gray" />
-        </main>
+        </>
     );
 }

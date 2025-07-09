@@ -33,7 +33,7 @@ export default function Home() {
     const arrowRight = <FaArrowRightLong className="inline ml-1 mb-[2px]" />;
 
     return (
-        <main>
+        <>
             <HexagonBackground>
                 <h1 className="
                     text-4xl
@@ -179,6 +179,6 @@ export default function Home() {
 
             {/* Let's Build Something Amazing Together */}
             <BuildSomethingAmazing />
-        </main>
+        </>
     );
 }

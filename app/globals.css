@@ -25,7 +25,7 @@ h2 {
     margin-bottom: 0.5rem;
 }
 
-p, li, strong, .serif-link {
+p, li, strong, .serif-link, input, textarea, span {
     font-family: 'Lora', serif;
 }
 

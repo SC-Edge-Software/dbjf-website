@@ -10,7 +10,7 @@ export default function Services() {
     const imageHeight = 0;
 
     return (
-        <main>
+        <>
             {/* Our Services */}
             <Section className="bg-dbjf-dark-gray 2xl:!px-[350px]">
                 <H2 className="mb-16">Our Services</H2>
@@ -69,6 +69,6 @@ export default function Services() {
             </Section>
 
             <BuildSomethingAmazing />
-        </main>
+        </>
     );
 }
