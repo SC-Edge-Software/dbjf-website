@@ -6,13 +6,14 @@ type ContactInfoProps = {
 
 export default function ContactInfo({ className }: ContactInfoProps) {
     const sharedItemClass = "flex items-center text-white";
-    const iconClass = "mr-4 text-dbjf-blue text-xl";
-    const textClass = "text-sm";
+    const iconClass = "mr-4 text-dbjf-blue text-xl w-[10%]";
+    const textClass = "text-xs md:text-sm w-[80%]";
 
     return (
         <div className={`
             ${className ?? ""}
-            px-8 
+            pl-4
+            md:pl-8 
             py-6
             bg-dbjf-dark-gray 
             w-full
@@ -26,7 +27,7 @@ export default function ContactInfo({ className }: ContactInfoProps) {
                 </li>
                 <li className={`${sharedItemClass} mb-3`}>
                     <FaEnvelope className={iconClass} />
-                    <span className={textClass}>db.jf.improvements@gmail.com</span>
+                    <span className={textClass} style={{ overflowWrap: "break-word" }}>db.jf.improvements@gmail.com</span>
                 </li>
                 <li className={sharedItemClass}>
                     <FaMapMarkerAlt className={iconClass} />
