@@ -8,11 +8,17 @@ const config: Config = {
     ],
     theme: {
         extend: {
-            backgroundImage: {
-                "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-                "gradient-conic":
-                    "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+            colors: {
+                "dbjf-gray": "#2e3537",
+                "dbjf-dark-gray": "#23282a",
+                "dbjf-blue": "#4cdbff"
             },
+            transitionDuration: {
+                "standard": "0.2s"
+            },
+            backgroundImage: {
+                "hexagons": "url('/images/hexagons.svg')"
+            }
         },
     },
     plugins: [],
